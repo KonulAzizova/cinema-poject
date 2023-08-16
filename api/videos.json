@@ -1,17 +1,17 @@
 [
     {
         "id":1,
-        "video":"../videos/video1(jumanji).mp4",
+        "video":"./videos/video1(jumanji).mp4",
         "title":"jumanji"
     },
     {
         "id":2,
-        "video":"../videos/video2(mary me).mp4",
+        "video":"./videos/video2(mary me).mp4",
         "title":"mary me"
     },
     {
         "id":3,
-        "video":"../videos/video3(kimi).mp4",
+        "video":"./videos/video3(kimi).mp4",
         "title":"kimi"
     }
 ]
