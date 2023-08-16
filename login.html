@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="login_header">
+        <div class="login_container">
+            <h1>LOGİN</h1>
+            <form onsubmit="loginSubmit(event)">
+                <div>
+                    <label for="">Email</label>
+                    <input required class="login_email" placeholder="sitiago@gmail.com" type="email">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input required class="login_psw" placeholder="..." type="password">
+                </div>
+                <a class="logina" href="">Forgot password</a>
+                <p class="login_err"></p>
+                <button class="login_btn">Login</button>
+            </form>
+            <button class="register_btn">Go Register</button>
+        </div>
+    </header>
+<script src="./data.js"></script>
+    <script src="./jogin.js"></script>
+</body>
+
+</html>
