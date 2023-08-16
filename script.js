@@ -13,7 +13,8 @@ let actionAdventureContainer = document.querySelector('#action_adventure_contain
 
 
 
-loggedEmail.innerHTML = getloggedInUser.email;
+loggedEmail.innerHTML =`${getloggedInUser ?getloggedInUser.email :""}`;
+ 
 
 fetch('./api/videos.json')
     .then(resp => resp.json())
