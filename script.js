@@ -1,4 +1,5 @@
 let loggedEmail = document.querySelector('.logged_container p');
+let logOut = document.querySelector('.logged_container svg');
 let getloggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 let bestComediesContainer=document.querySelector('#best_comedies_container');
 let sliderContainer = document.querySelector('#popular_move_container');
@@ -12,6 +13,10 @@ let rightSliderIcon2 = document.querySelector('.right_slider_icon2');
 let actionAdventureContainer = document.querySelector('#action_adventure_container');
 
 
+logOut.addEventListener('click',()=>{
+    window.location.href='./entrance.html'
+    localStorage.removeItem("loggedInUser")
+})
 
 loggedEmail.innerHTML =`${getloggedInUser ?getloggedInUser.email :""}`;
  
