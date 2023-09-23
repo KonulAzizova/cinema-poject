@@ -18,6 +18,13 @@ let navList = document.querySelector('.nav_list');
 let closeIcon = document.querySelector('.close_icon');
 
 
+
+if(!localStorage.getItem('loggedInUser')){
+    window.location.href='./entrance.html'
+}
+
+
+
 logOut.addEventListener('click', () => {
     window.location.href = './entrance.html'
     localStorage.removeItem("loggedInUser")

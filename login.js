@@ -4,7 +4,9 @@ let loginPsw=document.querySelector('.login_psw');
 let loginErr=document.querySelector('.login_err');
 
 
-
+if(localStorage.getItem('loggedInUser')){
+    window.location.href='./index.html'
+}
 
 
 goRegister.addEventListener('click',()=>{

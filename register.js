@@ -6,7 +6,9 @@ let registerReTypePsw = document.querySelector('.register_re_type_psw');
 let registerErr = document.querySelector('.register_err')
 
 
-
+if(localStorage.getItem('loggedInUser')){
+    window.location.href='./index.html'
+}
 
 
 
